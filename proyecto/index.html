@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyecto alumnos poo & ajax</title>
+    <!-- Estilos propios -->
+    <link rel="stylesheet" type="text/css" href="./estilo.css">
+    <script src="funciones.js"></script>
+
+</head>
+<body>
+
+    <h1 class="titulo">PROYECTO ALUMNOS</h1>
+    
+    <br>
+<div class="contenedor">
+    <div class="contenedor-arriba">
+        <div class="div"style="border: 3px solid rgb(255, 255, 255);" >    
+                <h2 class="h2">Agregar alumno</h2>
+                <br>
+                <input type="text" id="_nombreA" name="_nombre" placeholder="Introduce tu nombre">
+                <br><br>
+                <input type="text" id="_apellidoA" name="_apellido" placeholder="Introduce tu apellido">
+                <br><br>
+                <input type="number" id="_legajoA" name="_legajo" placeholder="Introduce tu legajo">
+                <br><br>
+                <input type="file" id="archivoA" name="archivo" /> 
+                <br><br>
+                <input class="boton" type="button" value="Cargar Datos" onclick="Ajax.Agregar();">
+        </div>
+        <div class="div"style="border: 3px solid rgb(255, 255, 255);">   
+            <h2 class="h2">Modificar alumno</h2>
+            <br> 
+            <input type="text" id="_nombreM" name="_nombre" placeholder="Introduce tu nombre">
+            <br><br>
+            <input type="text" id="_apellidoM" name="_apellido" placeholder="Introduce tu apellido">
+            <br><br>
+            <input type="number" id="_legajoM" name="_legajo" placeholder="Introduce tu legajo">
+            <br><br>
+            <input type="file" id="archivoM" name="archivo" /> 
+            <br><br>
+            <input class="boton" type="button" value="Modificar Datos" onclick="Ajax.Modificar();">
+        </div>
+        <div class="div"style="border: 3px solid rgb(255, 255, 255);"> 
+            <h2 class="h2">Borrar alumno</h2>
+            <br>   
+            <input type="number" id="_legajoB" name="_legajo" placeholder="Introduce tu legajo">
+            <br><br>
+            <input class="boton" type="button" value="Borrar Datos" onclick="Ajax.Borrar();">
+        </div>
+    </div>
+    <div class="contenedor-abajo">
+        <div class="div"style="border: 3px solid rgb(255, 255, 255);">
+            <h2 class="h2">Listar alumnos</h2>
+            <br>
+            <input class="boton" type="button" value="Listar Datos" onclick="Ajax.Listar();">
+                <div id="divTabla">
+                    
+                </div>
+        </div>
+        <div class="div"style="border: 3px solid rgb(255, 255, 255);">
+            <h2 class="h2">Obtener alumno</h2>
+        </div>
+        <div class="div"style="border: 3px solid rgb(255, 255, 255);">
+            <h2 class="h2">Redirigir x alumno</h2>
+        </div>
+    </div>
+</div>     
+</body>
+</html>
